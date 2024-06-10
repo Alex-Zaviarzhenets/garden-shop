@@ -1,0 +1,73 @@
+.wrapper {
+  height: 422px;
+  max-width: 316px;
+}
+
+.header {
+  position: relative;
+  width: 316px;
+  height: 284px;
+  background-color: #ccc;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: orange;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+}
+
+.heart {
+  top: 10px;
+}
+
+.cart {
+  top: 45px;
+}
+
+.cardImage {
+  width: 316px;
+  height: 284px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.info {
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.description {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.prices {
+  display: flex;
+  margin-top: 20px;
+}
+
+.newPrice {
+  font-weight: 400;
+  font-size: 40px;
+  margin-right: 16px;
+}
+
+.oldPrice {
+  margin-top: 20px;
+  text-decoration: line-through;
+}

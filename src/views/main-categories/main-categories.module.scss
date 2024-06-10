@@ -1,0 +1,33 @@
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 418px;
+  width: 1360px;
+
+//   @media #{$mobile} {}
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories {
+  display: flex;
+  gap: 32px;
+}
+
+button {
+  width: 142px;
+  height: 36px;
+  margin-top: 22px;
+  border-radius: 6px;
+}

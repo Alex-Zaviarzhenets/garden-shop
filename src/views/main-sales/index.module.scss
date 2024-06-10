@@ -1,0 +1,22 @@
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.sales {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 1360px;
+
+}

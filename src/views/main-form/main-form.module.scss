@@ -1,0 +1,78 @@
+.wrapper {
+  height: 486px;
+  margin-left: 16px;
+  margin-right: 16px;
+  background: linear-gradient(180deg, #339933 0%, #0B710B 100%);
+  border-radius: 12px;
+}
+
+.wrapperTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.wrapperImg {
+  width: 60%;
+  margin-left: 32px;
+  background-image: url('/assets/images/hands.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 360px;
+}
+
+.wrapperInputs {
+  width: 30%;
+}
+
+.divContainer {
+  font-size: 0;
+  height: 360px;
+  display: flex;
+}
+
+.wrapperImg,      //1
+.wrapperInputs {
+  display: inline-block;
+
+}
+
+.input {   //2
+  width: 100%;
+  height: 58px;
+  margin-top: 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+}
+
+.btn {   //3
+  width: 100%;
+  height: 58px;
+  margin-top: 32px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.input::placeholder {    //4
+  color: white;
+  font-family: Montserrat;
+  font-weight: 40;
+  margin-left: 20px;
+}

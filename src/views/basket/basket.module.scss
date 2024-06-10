@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  margin-left: 30px;
+}
+
+.title {
+  width: 1360px;
+  margin-left: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
+  display: flex;
+}
+
+.container {
+  margin-top: 40px;
+  width: 780px;
+  height: 572px;
+  margin: 0px;
+  border: 1px solid black;
+}
+
+.orderDetails {
+  width: 548px;
+  height: 572px;
+  border: 1px solid black;
+}
