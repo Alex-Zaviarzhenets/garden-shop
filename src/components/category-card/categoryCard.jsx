@@ -6,17 +6,18 @@ import { Link } from "react-router-dom";
 import styles from './category-card.module.scss';
 
 // Определяем компонент CategoryCard
-export const CategoryCard = ({image, title, id}) => {
+export const CategoryCard = ({ image, title, id }) => {
   // Этот компонент представляет собой карточку категории в списке категорий
   return (
     // Карточка является элементом списка с ссылкой на страницу категории
     <li className={styles.card}>
       <Link to={`/category/${id}`}>
         {/* Изображение категории */}
-        <img src={image} className={styles.image}/>
+        <img src={image} className={styles.image} />
         {/* Название категории */}
-        <h4 className={styles.title}>{title}</h4>
       </Link>
+      <h4 className={styles.title}>{title}</h4>
+
     </li>
   )
 }

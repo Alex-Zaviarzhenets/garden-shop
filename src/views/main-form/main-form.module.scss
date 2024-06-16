@@ -1,9 +1,10 @@
 .wrapper {
   height: 486px;
-  margin-left: 16px;
+  margin-left: 40px;
   margin-right: 16px;
   background: linear-gradient(180deg, #339933 0%, #0B710B 100%);
   border-radius: 12px;
+  display: wrap;
 }
 
 .wrapperTitle {
@@ -32,6 +33,8 @@
 
 .wrapperInputs {
   width: 30%;
+  padding-bottom:  32px;
+  
 }
 
 .divContainer {
@@ -75,4 +78,53 @@
   font-family: Montserrat;
   font-weight: 40;
   margin-left: 20px;
+}
+
+
+@import '../../constants/media.scss';
+
+
+@media (#{$desktop}) {
+  
+  .wrapper{
+    width: 960px;
+    height: 434px;
+  }
+
+  .wrapperImg {
+    width: 602px;
+    height: 308px;
+  }
+
+  .wrapperInputs {
+    width: 450px;
+    height: 198px;
+  }
+}
+
+@media (#{$tablet}) {
+  .wrapper {
+    width: 728px;
+    height: 426px;
+    margin-top: 430px;
+  }
+
+  .wrapperImg {
+    width: 320px;
+    height: 308px;
+  }
+
+  .wrapperInputs {
+    width: 334px;
+    height: 276px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  // .divContainer {
+  //   margin-top: 300px;
+  // }
+
 }

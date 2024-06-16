@@ -4,9 +4,9 @@ import "./categories.scss";
 
 
 export const Categories = () => {
-    return ( 
-        <main>
-            <MainCategories/>
+    return (
+        <main className="categories">
+            <MainCategories />
         </main>
-    ); 
+    );
 };

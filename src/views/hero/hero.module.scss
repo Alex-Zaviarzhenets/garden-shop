@@ -13,6 +13,7 @@
   background-size: cover;
   position: relative;
   padding: 80px 40px;
+  margin-top: 128px;
 }
 
 .hero::before {
@@ -39,11 +40,75 @@
 }
 
 .button {
-  background-color: var(--main-color);
+  background-color: #92A134;
   width: 218px;
   height: 58px;
   margin-top: 40px;
   font-family: Montserrat, sans-serif;
   font-weight: 20px;
   border-radius: 6px;
+  cursor: pointer;
 }
+
+@import '../../constants/media.scss';
+
+@media (#{$desktop}) {
+  .hero {
+    height: 476px;
+    width: 1000px;
+    ;
+  }
+
+  .title {
+    font-size: 90px;
+  }
+}
+
+@media (#{$tablet}) {
+  .hero {
+    height: 634px;
+    width: 768px;
+    margin-top: 110px;
+  }
+
+  .title {
+    font-size: 68px;
+  }
+
+}
+
+@media (#{$mobileLarge}) {
+  .hero {
+    height: 480px;
+    width: 600px;
+    margin-top: 68px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .button {
+    font-size: 18px;
+    width: 199px;
+    height: 47px;
+  }
+}
+
+// @media (#{$mobile}) {
+//   .hero {
+//     height: 480px;
+//     width: 360px;
+//     margin-top: 68px;
+//   }
+
+//   .title {
+//     font-size: 52px;
+//   }
+
+//   .button {
+//     font-size: 18px;
+//     width: 199px;
+//     height: 47px;
+//   }
+// }

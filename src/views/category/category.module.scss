@@ -1,5 +1,28 @@
+.mainWrapper {
+  margin-left: 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: 1360px;
+}
+
 .products {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 40px;
+
 }

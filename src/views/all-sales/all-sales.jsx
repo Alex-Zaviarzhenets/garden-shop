@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { BASE_URL } from "../../constants";
 import { CardItem } from "../../components/card-item";
-import styles from "./category.module.scss";
+import styles from "./all-sales.module.scss";
 import { SortField } from "../../components/sorted-field/sortField";
 
-export const Category = () => {
-  const { categoryId } = useParams();
-  const [category, setCategory] = useState({});
-  const [products, setProducts] = useState([]);
+export const AllSales = () => {
+
+  const [saleItems, setSaleItems] = useState([]);
+  const [filteredSaleItems, setFilteredSaleItems] = useState([]);
   const [filters, setFilters] = useState({
     priceFrom: "",
     priceTo: "",
     discounted: true,
     sortBy: "default",
   });
-  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`${BASE_URL}/categories/${categoryId}`)
+    fetch(`${BASE_URL}/products/all`)
       .then((res) => res.json())
-      .then(({ category, data }) => {
-        setCategory(category)
-        setProducts(data)
-      })
-  }, []);
+      .then((data) => {
+        setSaleItems(
+          data
+
+            .filter(
+              ({ discont_price }) => discont_price !== null
+            )
+        );
+      });
+  })
 
   useEffect(() => {
-    let filtered = products;
+    let filtered = saleItems;
 
     if (filters.priceFrom) {
       filtered = filtered.filter((product) => product.price >= filters.priceFrom);
@@ -49,14 +52,14 @@ export const Category = () => {
         filtered.sort((a, b) => b.price - a.price);
         break;
       case "alphabetically":
-        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
         break;
       default:
         break;
     }
 
-    setFilteredProducts(filtered);
-  }, [filters, products]);
+    setFilteredSaleItems(filtered);
+  }, [filters, saleItems]);
 
   const handleFilterChange = (newFilter) => {
     setFilters((prevFilters) => ({
@@ -67,26 +70,23 @@ export const Category = () => {
 
   return (
     <section className={styles.mainWrapper}>
-      <h1 className={styles.title}>{category.title}</h1>
+      <h1 className={styles.title}>All sales</h1>
+
       <SortField
+        className={styles.sortField}
         filters={filters}
         onFilterChange={handleFilterChange}
         onSortChange={(sortBy) => handleFilterChange({ sortBy })}
       />
-      <section className={styles.wrapper} >
 
-        <ul className={styles.products}>
-          {
-            products.map((props) => (
-              <CardItem
-                key={props.id}
-                {...props}
-              />
-            ))
-          }
-        </ul>
+      <section className={styles.wrapper}>
+        {saleItems.map((props) => (
+          <CardItem
+            key={props.id}
+            {...props}
+          />
+        ))}
       </section>
     </section>
   )
-
-}
+};

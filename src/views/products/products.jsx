@@ -43,7 +43,7 @@ export const Products = () => {
         filtered.sort((a, b) => b.price - a.price);
         break;
       case "alphabetically":
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
         break;
       default:
         break;
@@ -60,18 +60,19 @@ export const Products = () => {
   };
 
   return (
-    <>
+    <section className={styles.products}>
+   <h1 className={styles.title}>All products</h1>
+ 
       <SortField 
         filters={filters}
         onFilterChange={handleFilterChange}
         onSortChange={(sortBy) => handleFilterChange({ sortBy })}
       />
-
       <section className={styles.wrapper}>
         {filteredProducts.map((props) => (
           <CardItem key={props.id} {...props} />
         ))}
       </section>
-    </>
+    </section>
   );
 };

@@ -3,28 +3,28 @@ import styles from "./sortField.module.scss";
 
 export const SortField = ({
   filters = { priceFrom: "", priceTo: "", discounted: false, sortBy: "default" },
-  onFilterChange = () => {},
-  onSortChange = () => {},
+  onFilterChange = () => { },
+  onSortChange = () => { },
 }) => {
   return (
     <div className={styles.filterSortWrapper}>
       <label>
-        Цена
+        Price
         <input
           type="number"
-          placeholder="от"
+          placeholder="from"
           value={filters.priceFrom}
           onChange={(e) => onFilterChange({ priceFrom: e.target.value })}
         />
         <input
           type="number"
-          placeholder="до"
+          placeholder="to"
           value={filters.priceTo}
           onChange={(e) => onFilterChange({ priceTo: e.target.value })}
         />
       </label>
       <label>
-        Уценённые товары
+        Discounted products
         <input
           type="checkbox"
           checked={filters.discounted}
@@ -32,15 +32,15 @@ export const SortField = ({
         />
       </label>
       <label>
-        Сортировка
+        Sort
         <select
           value={filters.sortBy}
           onChange={(e) => onSortChange(e.target.value)}
         >
-          <option value="default">по умолчанию</option>
-          <option value="priceAsc">по возрастанию цены</option>
-          <option value="priceDesc">по убыванию цены</option>
-          <option value="alphabetically">по алфавиту</option>
+          <option value="default">Default</option>
+          <option value="priceAsc">Price ascending</option>
+          <option value="priceDesc">Price descending</option>
+          <option value="alphabetically">Alphabetically</option>
         </select>
       </label>
     </div>

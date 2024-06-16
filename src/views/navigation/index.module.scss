@@ -3,10 +3,7 @@
     height: 70px;
     margin-right: 20px;
 
-    @media screen and (max-width: 480px) {
-        width: 44px;
-        height: 44px;
-    }
+    
 }
 .navbar{
     width: 518px;
@@ -23,13 +20,7 @@
     line-height: 26px;
     font-family: Montserrat;
     text-decoration: none;
-    @media screen and (max-width: 480px) {
-       display: none;
-    }
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-        line-height: 20.8px;
-     }
+    
  
 }
 
@@ -43,20 +34,18 @@
     border-bottom: 1px solid #DDDDDD;
     padding: 30px 40px;
     
-    @media screen and (max-width: 1000px) {
-        padding: 30px 20px;
-    }
+   
 }
 
 .header.dark {
     background-color: #424436;
 
-    a {
-        color: #fff;
-    }
+    
 }
 
 .iconWrapper{
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
 }
@@ -69,3 +58,36 @@
 .active {
     text-transform: uppercase;
 }
+
+@import '../../constants/media.scss';
+
+@media (#{$tablet}) {
+    .header {
+        width: 768px;
+        height: 110px;
+    }
+}
+
+@media (#{$mobileLarge}) {
+    .header {
+        width: 480px;
+        height: 68px;
+    }
+
+    .iconWrapper {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+// @media (#{$mobile}) {
+//     .header {
+//         width: 360px;
+//         height: 68px;
+//     }
+
+//     .iconWrapper {
+//         width: 44px;
+//         height: 44px;
+//     }
+// }

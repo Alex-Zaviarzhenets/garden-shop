@@ -1,15 +1,17 @@
 .wrapper {
   display: flex;
-  margin-left: 30px;
+  margin-left: 40px;
+  width: 1360px;
+  gap: 32px;
 }
 
 .title {
-  width: 1360px;
   margin-left: 30px;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 64px;
   display: flex;
+
 }
 
 .container {
@@ -17,11 +19,154 @@
   width: 780px;
   height: 572px;
   margin: 0px;
-  border: 1px solid black;
+  overflow: auto;
 }
 
 .orderDetails {
   width: 548px;
   height: 572px;
-  border: 1px solid black;
+  background-color: #F2F6D3;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+
+}
+
+
+
+.mainSection {
+  width: 780px;
+  height: 180px;
+  display: flex;
+  margin-bottom: 16px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.countItemPriceConteiner {
+  // display: flex;
+
+  // justify-content: center;
+  // align-items: center;
+}
+
+.title {
+  width: 516px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between
+
+  
+}
+
+.daleteButton {
+  width: 15px;
+  height: 15px;
+}
+
+.cardImage {
+  width: 200px;
+  height: 180px;
+}
+
+.priceCounter {
+  width: 516px;
+  height: 58px;
+  display: flex;
+
+}
+
+.counter {
+  display: flex;
+  width: 200px;
+  margin-top: 32px;
+  margin-left: 30px;
+  
+  
+}
+
+.cardTitle {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;  
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40pxpx;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: wrap;
+  margin-top: 70px;
+  margin-left: 32px;
+}
+
+.price {
+  font-weight: 600px;
+  font-size: 40px;
+  font-family: Montserrat;
+  line-height: 44px;
+}
+
+.discontPrice {
+  font-weight: 500px;
+  font-size: 20px;
+  font-family: Montserrat;
+  line-height: 26px;
+  text-decoration: line-through;
+}
+
+.minus {
+  width: 58px;
+  height: 58px;
+  font-size: 35px;
+}
+
+.plus {
+  width: 58px;
+  height: 58px;
+  font-size: 35px;
+}
+
+.count {
+  width: 96px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.details {
+  width: 484px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  gap: 16px;
+  width: 484px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+}
+
+.input, .button {
+  width: 484px;
+  height: 58px;
 }

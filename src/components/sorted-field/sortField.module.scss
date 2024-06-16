@@ -1,14 +1,35 @@
+$mobile: 'max-width: 360px';
+$mobileLarge: 'max-width: 480px';
+$tablet: 'max-width: 768px';
+$desktop: 'max-width: 1000px';
+
 .filterSortWrapper {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 50px; /* Промежуток между элементами */
+  gap: 50px;
+  /* Промежуток между элементами */
   padding: 10px;
   font-family: montserrat;
   font-weight: semibold;
   font-size: 20px;
-  margin-top:  20px;
+  margin-top: 20px;
   margin-bottom: 20px;
+
+
+  @media (#{$tablet}) {
+    width: 728px;
+    height: 92px;
+  }
+
+  @media (#{$mobileLarge}) {
+    width: 440px;
+    height: 138px;
+  }
+
+  // @media (#{$mobile}) {
+
+  // }
 }
 
 .priceInput {

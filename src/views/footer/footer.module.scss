@@ -1,7 +1,7 @@
 footer {
   margin-top: 80px;
   margin-bottom: 80px;
-  margin-left: 16px;
+  margin-left: 40px;
   margin-right: 16px;
 }
 
@@ -13,7 +13,7 @@ h2 {
 
 
 
-.longDivCont {
+.firstDiv {
   width: 780px;
   height: 150px;
   background-color: lightgrey;
@@ -21,7 +21,15 @@ h2 {
   border-radius: 12px;
 }
 
-.shortDivCont {
+.thirdDiv {
+  width: 780px;
+  height: 150px;
+  background-color: lightgrey;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.secondDiv {
   width: 548px;
   height: 150px;
   background-color: lightgrey;
@@ -29,11 +37,19 @@ h2 {
   border-radius: 12px;
 }
 
-.contSection{
+.fourthDiv {
+  width: 548px;
+  height: 150px;
+  background-color: lightgrey;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.contSection {
   display: flex;
   flex-wrap: wrap;
   width: 1360px;
-  height: 376px;  
+  height: 376px;
   gap: 32px;
 }
 
@@ -53,8 +69,100 @@ h3 {
 }
 
 .map {
-  
+
   width: 1360px;
   height: 350px;
   border: 1px solid black;
 }
+
+@import '../../constants/media.scss';
+
+@media (#{$desktop}) {
+
+  .firstDiv {
+    width: 470px;
+    height: 150px;
+  }
+
+  .secondDiv {
+    width: 470px;
+    height: 150px;
+  }
+
+  .thirdDiv {
+    width: 470px;
+    height: 238px;
+  }
+
+  .fourthDiv {
+    width: 470px;
+    height: 238px;
+  }
+
+}
+
+@media (#{$tablet}) {
+
+  .contSection {
+    width: 728px;
+    height: 408px;
+    gap: 20px;
+  }
+
+  .firstDiv {
+    width: 479px;
+    height: 150px;
+  }
+
+  .secondDiv {
+    width: 229px;
+    height: 150px;
+  }
+
+  .thirdDiv {
+    width: 479px;
+    height: 238px;
+  }
+
+  .fourthDiv {
+    width: 229px;
+    height: 238px;
+  }
+
+
+
+}
+
+@media (#{$mobileLarge}) {
+
+  .contSection {
+    width: 440px;
+    height: 525px;
+    gap: 12px;
+    display: flex;
+  }
+
+  .firstDiv {
+    width: 440px;
+    height: 114px;
+  }
+
+  .secondDiv {
+    width: 440px;
+    height: 92px;
+  }
+
+  .thirdDiv {
+    width: 440px;
+    height: 145px;
+  }
+
+  .fourthDiv {
+    width: 440px;
+    height: 114px;
+  }
+
+
+}
+
+@media (#{$mobile}) {}

@@ -14,10 +14,12 @@ export const MainCategories = ({hasButton, maxSize=Infinity}) => {
   }, [])
 
   return (
+         <section className={styles.wrapperSection}>  
+          <h1 className={styles.title}>Categories</h1>
+
     <section className={styles.wrapper}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Categories</h1>
-        {hasButton && <button className={styles.button}>All categories</button>}
+        {/* {hasButton && <button className={styles.button}>All categories</button>} */}
       </header>
 
       <ul className={styles.categories}>
@@ -26,6 +28,7 @@ export const MainCategories = ({hasButton, maxSize=Infinity}) => {
 
         ))}
       </ul>
+    </section>
     </section>
   );
 }

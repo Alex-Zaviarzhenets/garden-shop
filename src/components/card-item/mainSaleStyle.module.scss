@@ -1,0 +1,51 @@
+$mobile: 'max-width: 360px';
+$mobileLarge: 'max-width: 480px';
+$tablet: 'max-width: 768px';
+$desktop: 'max-width: 1000px';
+
+.wrapper {
+  
+  @media (#{$desktop}) {
+    height: 398px;
+    width: 225px;
+  }
+
+  @media (#{$tablet}) {
+    height: 372px;
+    width: 354px;
+  }
+
+  @media (#{$mobileLarge}) {
+    height: 358px;
+    width: 210px;
+  }
+
+  @media (#{$mobile}) {
+    height: 335px;
+    width: 320px;
+  }
+}
+
+.cardImage {
+
+  @media (#{$desktop}) {
+    height: 250px;
+    width: 225px;
+  }
+
+  @media (#{$tablet}) {
+    height: 354px;
+    max-width: 250px;
+  }
+
+  @media (#{$mobileLarge}) {
+    height: 210px;
+    max-width: 220px;
+  }
+
+  @media (#{$mobile}) {
+    height: 320px;
+    max-width: 220px;
+  }
+
+}

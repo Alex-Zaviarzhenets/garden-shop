@@ -79,8 +79,10 @@
   height: 306px;
   word-wrap: break-word;
   margin-top: 32px;
-  overflow-y: auto; /* Вертикальная прокрутка */
-  overflow-x: hidden; /* Отключение горизонтальной прокрутки */
+  overflow-y: auto;
+  /* Вертикальная прокрутка */
+  overflow-x: hidden;
+  /* Отключение горизонтальной прокрутки */
 }
 
 body {

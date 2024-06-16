@@ -1,11 +1,21 @@
+$mobile: 'max-width: 360px';
+$mobileLarge: 'max-width: 480px';
+$tablet: 'max-width: 768px';
+$desktop: 'max-width: 1000px';
+
 .wrapper {
   display: flex;
   // flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 13px;
   max-width: 1360px;
   
   gap: 32px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
 }
 
 .filterSortWrapper {
@@ -20,6 +30,27 @@
   margin-top:  20px;
   margin-bottom: 20px;
 }
+
+.products {
+  margin-left: 40px;
+
+  @media (#{$desktop}) {
+    width: 960px;
+    height: 986px;
+  }
+
+  @media (#{$tablet}) {
+    width: 745px;
+    height: 1766px;
+  } 
+
+  @media (#{$mobileLarge}) {
+    width: 480px;
+    height: 1761px;
+  }
+
+}
+
 
 .priceInput {
   width: 60px;

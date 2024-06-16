@@ -31,9 +31,10 @@ export const MainSales = () => {
   return (
     <section className={styles.wrapper}>
       <h1 className={styles.title}>Sales</h1>
-      <div className={styles.sales}>
-        {saleItems.map(({ price, discont_price, description, image, id }) => (
+      <ul className={styles.sales}>
+        {saleItems.map(({ price, discont_price, description, image, id, title }) => (
           <CardItem
+            title={title}
             key={id}
             price={price}
             discont_price={discont_price}
@@ -43,7 +44,7 @@ export const MainSales = () => {
             id={id}
           />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

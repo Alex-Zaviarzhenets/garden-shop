@@ -1,18 +1,68 @@
 .card {
   text-align: center;
-  list-style: none;
+  list-style: none; 
+  width: 316px;
+  height: 350px;
+
+}
+
+:has(.card:nth-child(5):last-child)>.card {
+  width: 248px;
 }
 
 .image {
-  width: 316px;
+  width: 100%;
   height: 350px;
   border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .title {
   font-weight: medium;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
-  text-decoration: none;
-  border-bottom: none;
-};
+
+}
+
+
+
+
+@import '../../constants/media.scss';
+
+@media (#{$desktop}) {
+
+  .image {
+    width: 225px;
+    height: 292px;
+  }
+
+  .card {
+    gap: 20px;
+  }
+}
+
+@media (#{$tablet}) {
+
+
+  .image {
+    width: 354px;
+    height: 292px;
+  }
+}
+
+@media (#{$mobileLarge}) {
+
+  .image {
+    width: 210px;
+    height: 260px;
+  }
+}
+
+// @media (#{$mobile}) {
+
+//   .image {
+//     width: 320px;
+//     height: 220px;
+//   }
+// }
