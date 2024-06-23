@@ -9,6 +9,7 @@ h2 {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 64px;
+  margin-bottom: 40px;
 }
 
 
@@ -69,7 +70,7 @@ h3 {
 }
 
 .map {
-
+  margin-top: 32px;
   width: 1360px;
   height: 350px;
   border: 1px solid black;
@@ -166,3 +167,14 @@ h3 {
 }
 
 @media (#{$mobile}) {}
+
+.mapConteiner {
+  background-image: url('/assets/images/map.png');
+  width: 1360px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+}

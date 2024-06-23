@@ -50,3 +50,39 @@ $desktop: 'max-width: 1000px';
   width: 200px;
   height: 36px;
 }
+
+.priceFromTo {
+  width: 112px;
+  height: 36px;
+  margin-left: 16px;
+  border-radius: 5px;
+  font-family: monteserrat;
+  font-weight: semi-bold;
+  font-size: 16px;
+  padding-left: 16px;
+  
+}
+
+.discountOnOff {
+  width: 36px;
+  height: 36px;
+  margin-left: 16px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.selector {
+  width: 200px;
+  height: 36px;
+  margin-left: 16px;
+  border-radius: 5px;
+  font-family: monteserrat;
+  font-weight: semi-bold;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.discont {
+  display: flex;
+  align-items: center;
+}

@@ -1,5 +1,6 @@
 .wrapper {
   height: 486px;
+  width: 1360px;
   margin-left: 40px;
   margin-right: 16px;
   background: linear-gradient(180deg, #339933 0%, #0B710B 100%);
@@ -58,6 +59,10 @@
   color: white;
   border-radius: 12px;
   display: flex;
+  font-size: 20px;
+  font-family: monteserrat;
+  font-weight: semi-bold;
+  padding-left: 20px;
 }
 
 .btn {   //3
@@ -71,6 +76,7 @@
   font-family: Montserrat;
   font-weight: 600;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .input::placeholder {    //4

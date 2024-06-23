@@ -86,6 +86,7 @@
   width: 200px;
   margin-top: 32px;
   margin-left: 30px;
+
   
   
 }
@@ -102,9 +103,9 @@
 .prices {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   display: wrap;
-  margin-top: 70px;
+  margin-top: 105px;
   margin-left: 32px;
 }
 
@@ -113,6 +114,8 @@
   font-size: 40px;
   font-family: Montserrat;
   line-height: 44px;
+  text-decoration: line-through;
+
 }
 
 .discontPrice {
@@ -121,29 +124,37 @@
   font-family: Montserrat;
   line-height: 26px;
   text-decoration: line-through;
+
 }
 
 .minus {
   width: 58px;
   height: 58px;
   font-size: 35px;
+  cursor: pointer;
+  // background-color: #e7e7e7; color: black;
 }
+
+
 
 .plus {
   width: 58px;
   height: 58px;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .count {
   width: 96px;
   height: 58px;
+  margin: 0px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  border: 1px solid gray;
-  border-radius: 5px;
+  justify-content: center;
+  font-family: monteserrat;
+  font-weight: semi-bold;
+  font-size: 40px;
+  padding-top: 45px;
 }
 
 .details {
@@ -169,4 +180,12 @@
 .input, .button {
   width: 484px;
   height: 58px;
+  font-size: 20px;
+  font-family: monteserrat;
+  font-weight: semi-bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding-left: 20px;
 }

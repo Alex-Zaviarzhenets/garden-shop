@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import styles from "./single-item.module.scss";
-import { BASE_URL } from "../../constants";
 import { getDiscountPercent } from "../../utils/getDiscountPercent";
 import { BasketContext } from '../../components/contex/basketContext';
 

@@ -19,6 +19,8 @@ $desktop: 'max-width: 1000px';
   font-weight: bold;
   font-size: 64px;
   margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .header {
@@ -58,7 +60,7 @@ button {
 @media (#{$mobileLarge}) {
   .categories {
     width: 440px;
-    height:634px;
+    height: 634px;
   }
 }
 

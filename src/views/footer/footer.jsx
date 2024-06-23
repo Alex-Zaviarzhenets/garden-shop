@@ -6,7 +6,7 @@ export const Footer = () => {
 
         <footer>
             <div>
-                <h2>
+                <h2 className={styles.title}>
                     Contact
                 </h2>
             </div>
@@ -28,6 +28,10 @@ export const Footer = () => {
                     <p>instaggram</p>
                 </div>
             </section>
+
+            <div className={styles.mapConteiner}>
+              
+            </div>
 
 
 
