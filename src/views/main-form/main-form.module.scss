@@ -3,7 +3,7 @@
   width: 1360px;
   margin-left: 40px;
   margin-right: 16px;
-  background: linear-gradient(180deg, #339933 0%, #0B710B 100%);
+  background: linear-gradient(180deg, #87933D 0%, #55610B 100%);
   border-radius: 12px;
   display: wrap;
 }
@@ -14,15 +14,24 @@
   justify-content: center;
 }
 
+.titleWrapper {
+  width: 1360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
+  margin-top: 32px;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 64px;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
   color: white;
 }
 
 .wrapperImg {
+  margin-top: 16px;
   width: 60%;
   margin-left: 32px;
   background-image: url('/assets/images/hands.png');
@@ -33,8 +42,10 @@
 }
 
 .wrapperInputs {
-  width: 30%;
+  width: 516px;
+  margin-top: 32px;
   padding-bottom:  32px;
+  margin-right:  32px;
   
 }
 

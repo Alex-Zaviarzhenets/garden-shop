@@ -1,0 +1,26 @@
+
+
+#all products
+filtre, input, select font
+sale tag change bg, position right
+
+#single item
+text font,
+buttons border, centering
+sale position right
+count bg, font, border
+price font
+
+#footer 
+display grid, bg
+
+#cart
+change naming (basket to cart)
+fon
+
+
+
+
+
+*CARDITEM
+price, full price

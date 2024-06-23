@@ -30,7 +30,8 @@ export const Footer = () => {
             </section>
 
             <div className={styles.mapConteiner}>
-              
+            <iframe width="1360" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1280&amp;height=764&amp;hl=en&amp;q=52.5030591,13.364968&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
             </div>
 
 

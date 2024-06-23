@@ -4,7 +4,7 @@ import styles from "./main-form.module.scss";
 export const MainForm = () => {
   return (
     <section className={styles.wrapper}>
-      <div>
+      <div className={styles.titleWrapper}>
         <h2 className={styles.title}>5% off on the first order</h2>
       </div>
       <div className={styles.divContainer}>

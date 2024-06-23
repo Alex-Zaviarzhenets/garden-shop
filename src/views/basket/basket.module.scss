@@ -76,19 +76,18 @@
 
 .priceCounter {
   width: 516px;
-  height: 58px;
+  // height: 58px;
   display: flex;
+  align-items: center;
 
 }
 
 .counter {
   display: flex;
   width: 200px;
-  margin-top: 32px;
+  // margin-top: 32px;
   margin-left: 30px;
-
-  
-  
+  border: 1px solid #ddd
 }
 
 .cardTitle {
@@ -105,7 +104,7 @@
   justify-content: center;
   align-items: end;
   display: wrap;
-  margin-top: 105px;
+  // margin-top: 105px;
   margin-left: 32px;
 }
 
@@ -114,7 +113,7 @@
   font-size: 40px;
   font-family: Montserrat;
   line-height: 44px;
-  text-decoration: line-through;
+  // text-decoration: line-through;
 
 }
 
@@ -123,7 +122,7 @@
   font-size: 20px;
   font-family: Montserrat;
   line-height: 26px;
-  text-decoration: line-through;
+  // text-decoration: line-through;
 
 }
 
@@ -154,7 +153,7 @@
   font-family: monteserrat;
   font-weight: semi-bold;
   font-size: 40px;
-  padding-top: 45px;
+  // padding-top: 45px;
 }
 
 .details {

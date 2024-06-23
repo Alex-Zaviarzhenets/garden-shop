@@ -12,7 +12,7 @@ export const Category = () => {
   const [filters, setFilters] = useState({
     priceFrom: "",
     priceTo: "",
-    discounted: true,
+    discounted: false,
     sortBy: "default",
   });
   const [filteredProducts, setFilteredProducts] = useState([]);

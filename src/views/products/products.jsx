@@ -10,7 +10,7 @@ export const Products = () => {
   const [filters, setFilters] = useState({
     priceFrom: "",
     priceTo: "",
-    discounted: true,
+    discounted: false,
     sortBy: "default",
   });
 

@@ -3,18 +3,19 @@ import styles from "./single-item.module.scss";
 import { getDiscountPercent } from "../../utils/getDiscountPercent";
 import { BasketContext } from '../../components/contex/basketContext';
 
+// Компонент для отображения одного товара
 export const SingleItem = ({
-  title,
-  price,
-  description,
-  image,
-  discont_price,
+  title, // название
+  price, // цена
+  description, // описание
+  image, // изображение
+  discont_price, // цена со скидкой
 }) => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(1); // количество товара
 
-  const hasDiscount = discont_price && discont_price < price;
+  const hasDiscount = discont_price && discont_price < price; // есть ли скидка
 
-  const { addItemToBasket } = useContext(BasketContext);
+  const { addItemToBasket } = useContext(BasketContext); // получение функции добавления товара в корзину
 
   const handleAddToBasket = () => {
     const item = { title, price, description, image, discont_price, count };
@@ -58,12 +59,12 @@ export const SingleItem = ({
             -
           </button>
           <button className={styles.addToCart} onClick={handleAddToBasket}>
-            Add to cart
+            Добавить в корзину
           </button>
         </div>
 
         <div className={styles.description}>
-          <h3>Description</h3>
+          <h3>Описание</h3>
           <p>{description}</p>
         </div>
       </div>
