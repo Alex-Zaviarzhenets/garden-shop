@@ -15,6 +15,7 @@
 .cardImage {
   width: 780px;
   height: 572px;
+  border-radius: 10px;
 }
 
 
@@ -30,6 +31,7 @@
 
 .allInformationWrapper {
   max-width: 548px;
+  height: 574px;
   flex-wrap: wrap;
 }
 
@@ -39,6 +41,15 @@
   height: 58px;
   margin-left: 30px;
   margin-bottom: 32px;
+  
+}
+
+.counter {
+  display: flex;
+  width: 200px;
+  border-radius: 15px;
+  border: 1px solid #ddd
+  
 }
 
 .plus,
@@ -47,6 +58,11 @@
   height: 58px;
   font-size: 40px;
   cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius:5px;
+  border: 1px solid #DDDDDD;
+  font-family: montserrat;
+
 }
 
 .count {
@@ -58,8 +74,11 @@
   justify-content: center;
   font-family: monteserrat;
   font-weight: semi-bold;
-  font-size: 40px;
-  padding-top: 45px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  font-family: montserrat;
+
+  // padding-top: 45px;
 }
 
 .addToCart {
@@ -73,6 +92,7 @@
   font-size: 20px;
   color: white;
   cursor: pointer;
+  border-radius: none;
 }
 
 .description {
@@ -80,9 +100,15 @@
   word-wrap: break-word;
   margin-top: 32px;
   overflow-y: auto;
+  font-size: 16px;
   /* Вертикальная прокрутка */
   overflow-x: hidden;
   /* Отключение горизонтальной прокрутки */
+}
+
+.txtDescription {
+  font-size: 16px;
+
 }
 
 
@@ -97,23 +123,29 @@
 }
 
 .currentPrice {
-  font-size: 2em;
-  color: #3e3e29;
-  font-weight: bold;
+  font-size: 64px;
+  color: #424436;
+  font-weight: 700;
   margin-right: 10px;
 }
 
 .originalPrice {
-  font-size: 1.5em;
+  font-size: 40px;
+  font-weight: 500;
   color: #a0a0a0;
   text-decoration: line-through;
   margin-right: 10px;
+  margin-top: 18px;
+  margin-left: 32px;
 }
 
 .discountBadge {
-  background-color: #f47216;
+  background-color: #F26D22;
   color: white;
-  font-size: 1em;
+  font-size: 20px;
+  font-weight: 600px;
   padding: 5px 10px;
   border-radius: 5px;
+  margin-bottom: 40px ;
+  margin-left: 16px;
 }

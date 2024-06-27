@@ -4,14 +4,16 @@ $tablet: 'max-width: 768px';
 $desktop: 'max-width: 1000px';
 
 .wrapper {
+  gap: 32px;
   margin-top: 80px;
   margin-bottom: 80px;
-  margin-left: 40px;
+  // margin-left: 40px;
   margin-right: 16px;
   height: 418px;
   width: 100%;
   display: flex;
   display: wrap;
+
 }
 
 .title {
@@ -34,12 +36,6 @@ $desktop: 'max-width: 1000px';
 
 }
 
-button {
-  width: 142px;
-  height: 36px;
-  margin-top: 22px;
-  border-radius: 6px;
-}
 
 
 @media (#{$desktop}) {
@@ -48,12 +44,16 @@ button {
     height: 420px;
   }
 
+  .wrapper {
+    gap: 20px;
+  }
+
 }
 
 @media (#{$tablet}) {
   .categories {
     width: 728px;
-    height: 730px;
+    height: 760px;
   }
 }
 

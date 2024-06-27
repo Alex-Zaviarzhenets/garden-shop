@@ -12,12 +12,25 @@ h2 {
   // margin-bottom: 40px;
 }
 
+h3 {
+  color: #8B8B8B;
+  font-family: montserrat;
 
+  font-weight: 500;
+  font-size: 20px;
+}
+
+p {
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 40px;
+
+}
 
 .firstDiv {
   width: 780px;
   height: 150px;
-  background-color: lightgrey;
+  background-color: #F2F6D3;
   flex-shrink: 0;
   border-radius: 12px;
 }
@@ -25,7 +38,7 @@ h2 {
 .thirdDiv {
   width: 780px;
   height: 150px;
-  background-color: lightgrey;
+  background-color: #F2F6D3;
   flex-shrink: 0;
   border-radius: 12px;
 }
@@ -33,7 +46,7 @@ h2 {
 .secondDiv {
   width: 548px;
   height: 150px;
-  background-color: lightgrey;
+  background-color: #F2F6D3;
   flex-shrink: 0;
   border-radius: 12px;
 }
@@ -41,7 +54,7 @@ h2 {
 .fourthDiv {
   width: 548px;
   height: 150px;
-  background-color: lightgrey;
+  background-color: #F2F6D3;
   flex-shrink: 0;
   border-radius: 12px;
 }

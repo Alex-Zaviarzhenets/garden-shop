@@ -10,24 +10,24 @@ export const SortField = ({
   return (
     <div className={styles.filterSortWrapper}>
       <label>
-        Цена
+        Price
         <input
           className={styles.priceFromTo}
           type="number"
-          placeholder="от"
+          placeholder="from"
           value={filters.priceFrom}
           onChange={(e) => onFilterChange({ priceFrom: e.target.value })}
         />
         <input
           className={styles.priceFromTo}
           type="number"
-          placeholder="до"
+          placeholder="to"
           value={filters.priceTo}
           onChange={(e) => onFilterChange({ priceTo: e.target.value })}
         />
       </label>
       <label className={styles.discont}>
-        Товары со скидкой
+        Discounted products
         <input
           className={styles.discountOnOff}
           type="checkbox"
@@ -36,16 +36,17 @@ export const SortField = ({
         />
       </label>
       <label>
-        Сортировка
+        Sorting
         <select
           className={styles.selector}
           value={filters.sortBy}
           onChange={(e) => onSortChange(e.target.value)}
         >
-          <option value="default">По умолчанию</option>
-          <option value="priceAsc">По возрастанию цены</option>
-          <option value="priceDesc">По убыванию цены</option>
-          <option value="alphabetically">Алфавитно</option>
+          <option value="default">Default</option>
+<option value="priceAsc">Price Ascending</option>
+<option value="priceDesc">Price Descending</option>
+<option value="alphabetically">Alphabetically</option>
+
         </select>
       </label>
     </div>

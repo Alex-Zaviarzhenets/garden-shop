@@ -35,37 +35,41 @@ export const SingleItem = ({
           {hasDiscount ? (
             <>
               <span className={styles.currentPrice}>${discont_price}</span>
-              <span className={styles.originalPrice}>{price}</span>
+              <span className={styles.originalPrice}>${price}</span>
             </>
           ) : (
             <span className={styles.currentPrice}>${price}</span>
           )}
           {hasDiscount && (
             <span className={styles.discountBadge}>
-              {getDiscountPercent(price, discont_price)}%
+              -{getDiscountPercent(price, discont_price)}%
             </span>
           )}
         </div>
 
         <div className={styles.counterWrapper}>
+          
+          <div className={styles.counter}>
           <button className={styles.plus} onClick={() => setCount(count + 1)}>
-            +
+            -
           </button>
           <p className={styles.count}>{count}</p>
           <button
             className={styles.minus}
-            onClick={() => count > 1 && setCount(count - 1)}
+            onClick={() => count > 1 && setCount(count - 1)    }
           >
-            -
+            +
           </button>
+          </div>
+
           <button className={styles.addToCart} onClick={handleAddToBasket}>
-            Добавить в корзину
+            Add to cart
           </button>
         </div>
 
         <div className={styles.description}>
-          <h3>Описание</h3>
-          <p>{description}</p>
+          <h3>Description</h3>
+          <p className={styles.txtDescription}>{description}</p>
         </div>
       </div>
     </div>
