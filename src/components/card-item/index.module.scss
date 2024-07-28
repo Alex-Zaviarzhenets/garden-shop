@@ -23,13 +23,12 @@ $desktop: 'max-width: 1000px';
   @media (#{$mobileLarge}) {
     height: 358px;
     max-width: 210px;
-
   }
 
+  // Uncomment for mobile styles
   // @media (#{$mobile}) {
   //   height: 335px;
   //   max-width: 320px; 
-
   // }
 }
 
@@ -53,6 +52,7 @@ $desktop: 'max-width: 1000px';
     max-width: 210px;
   }
 
+  // Uncomment for mobile styles
   // @media (#{$mobile}) {
   //   width: 320px;
   //   height: 220px;  
@@ -68,8 +68,6 @@ $desktop: 'max-width: 1000px';
   padding: 5px 10px;
   border-radius: 5px;
   font-family: montserrat;
-
-  
 }
 
 .icon {
@@ -98,8 +96,6 @@ $desktop: 'max-width: 1000px';
   object-fit: cover;
   object-position: center;
 
-
-
   @media (#{$desktop}) {
     width: 225px;
     height: 250px;
@@ -115,6 +111,7 @@ $desktop: 'max-width: 1000px';
     max-width: 210px;
   }
 
+  // Uncomment for mobile styles
   // @media (#{$mobile}) {
   //   width: 320px;
   //   height: 220px;  
@@ -146,7 +143,6 @@ $desktop: 'max-width: 1000px';
     margin-right: 16px;
     text-decoration: none;
     font-family: montserrat;
-
   }
 
   .oldPrice {
@@ -154,6 +150,5 @@ $desktop: 'max-width: 1000px';
     text-decoration: line-through;
     font-family: montserrat;
     color: #8B8B8B;
-
   }
 }

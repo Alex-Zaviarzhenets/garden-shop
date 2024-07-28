@@ -61,6 +61,13 @@
 
 @import '../../constants/media.scss';
 
+@media (#{$desktop}) {
+    .header {
+        width: 1000px;
+        height: 128px;
+    }
+}
+
 @media (#{$tablet}) {
     .header {
         width: 768px;

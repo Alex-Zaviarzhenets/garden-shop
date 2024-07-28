@@ -29,8 +29,7 @@
   padding-right: 32px;
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
-
+  border-radius: 10px;
 }
 
 
@@ -65,7 +64,23 @@
 .cardImage {
   width: 200px;
   height: 180px;
+  border-radius: 10px;
 }
+
+.closeModul{
+  
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/close.png');
+    z-index: 4;
+    cursor: pointer;
+    right: 14px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+
+}  
+
 
 .priceCounter {
   width: 516px;
@@ -116,8 +131,8 @@
   font-weight: 500px;
   font-size: 20px;
   font-family: Montserrat;
-  line-height: 26px;
-  // text-decoration: line-through;
+  // line-height: 26px;
+  text-decoration: line-through;
 
 }
 
@@ -161,7 +176,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin-left: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.titleDetails {
+  font-family: monteserrat, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.itemCount {
+  font-family: monteserrat, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #8B8B8B;
+  margin-top: 24px;
+}
+
+.totalPrice {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #8B8B8B;
+  margin-top: 16px;
+  font-size: 40px;
+  align-items: end;
+}
+.totalPriceNum {
+  color: black;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  // margin-bottom: 0;
+  // margin-bottom: 32px;
 }
 
 .form {
