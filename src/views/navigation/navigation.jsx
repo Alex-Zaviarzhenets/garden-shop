@@ -5,12 +5,7 @@ import { IconCounter } from "../../components/icon-counter"; // Импорт к�
 import { NavLink } from "react-router-dom"; // Импорт компонента NavLink для создания навигационных ссылок
 
 export const Navigation = () => {
-  const [setIsToggleOn] = useState(false); // Состояние для управления состоянием меню (открыто/закрыто)
-
-  
-
   const getClassName = ({ isActive }) => isActive ? styles.active : ''; // Функция для получения класса стиля styles.active в зависимости от isActive
-
   return (
     <header className={styles.header}> {/* Основной контейнер заголовка с применением стилей из CSS модуля */}
       <div className={styles.iconWrapper}>
