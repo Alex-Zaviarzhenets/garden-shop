@@ -1,4 +1,3 @@
-import React, { useState} from "react"; // Импорт библиотеки React и хука useState
 import styles from "./index.module.scss"; // Импорт CSS модулей для стилизации компонента
 import { CartIcon, LogoIcon } from '../../assets/icons.jsx'; // Импорт иконок CartIcon и LogoIcon из папки assets/icons.jsx
 import { IconCounter } from "../../components/icon-counter"; // Импорт компонента IconCounter для отображения счетчика иконок
