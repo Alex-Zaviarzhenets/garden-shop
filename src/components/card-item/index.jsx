@@ -38,7 +38,7 @@ export const CardItem = ({
               <div className={styles.newPrice}>${discont_price}</div> {/* цена со скидкой */}
               <div className={styles.oldPrice}>${price}</div> {/* оригинальная цена */}
             </>
-          ) : (
+          ) : ( 
             <div className={styles.newPrice}>${price}</div> )} {/* если нет скидки, отображаем только текущую цену */}
         </div>
       </div>
