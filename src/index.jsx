@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client"; // Импорт метода createRoot
 import { App } from "./app.jsx"; // Импорт компонента App из файла app.jsx
 import "./index.css"; // Импорт файла стилей index.css
 import { BrowserRouter } from "react-router-dom"; // Импорт компонента BrowserRouter из react-router-dom для обработки маршрутизации
-import { Provider } from "react-redux"; // Импорт компонента Provider из react-redux для обеспечения доступа к Redux store
 // import { store } from "./store/index.js"; // Комментарий: закомментирован импорт store из файла store/index.js
 import { BasketProvider } from "./components/contex/basketContext.js"; // Импорт компонента BasketProvider из файла basketContext.js
 

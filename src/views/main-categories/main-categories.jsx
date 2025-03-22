@@ -11,7 +11,7 @@ export const MainCategories = ({ hasButton, maxSize = Infinity }) => {
     fetch(`${BASE_URL}/categories/all`) // Запрос к серверу для получения всех категорий
       .then((res) => res.json()) // Преобразование ответа в формат JSON
       .then((data) => setCategories(data.slice(0, maxSize))); // Установка списка категорий, ограниченного по размеру maxSize
-  }, []); // Пустой массив зависимостей означает, что useEffect будет запущен только при монтировании компонента
+  }, [maxSize]); // Пустой массив зависимостей означает, что useEffect будет запущен только при монтировании компонента
 
   return (
     <section className={styles.wrapperSection}> {/* Контейнерная секция для обертки компонента */}

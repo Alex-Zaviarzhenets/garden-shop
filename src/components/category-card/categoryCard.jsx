@@ -13,7 +13,7 @@ export const CategoryCard = ({ image, title, id }) => {
     <li className={styles.card}>
       <Link to={`/category/${id}`}>
         {/* Изображение категории */}
-        <img src={image} className={styles.image} />
+        <img alt="product photo" src={image} className={styles.image} />
         {/* Название категории */}
       </Link>
       <h4 className={styles.title}>{title}</h4>

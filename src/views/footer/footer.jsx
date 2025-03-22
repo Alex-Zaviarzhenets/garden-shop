@@ -41,6 +41,7 @@ export const Footer = () => {
             </section>
             <div className={styles.mapConteiner}> {/* Контейнер для карты */}
                 <iframe
+                    title="map"
                     width="1360"
                     height="350"
                     frameBorder="0"

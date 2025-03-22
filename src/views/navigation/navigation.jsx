@@ -1,16 +1,13 @@
-import React, { useState, useContext } from "react"; // Импорт библиотеки React и хука useState
+import React, { useState} from "react"; // Импорт библиотеки React и хука useState
 import styles from "./index.module.scss"; // Импорт CSS модулей для стилизации компонента
 import { CartIcon, LogoIcon } from '../../assets/icons.jsx'; // Импорт иконок CartIcon и LogoIcon из папки assets/icons.jsx
 import { IconCounter } from "../../components/icon-counter"; // Импорт компонента IconCounter для отображения счетчика иконок
 import { NavLink } from "react-router-dom"; // Импорт компонента NavLink для создания навигационных ссылок
-import cn from 'classnames'; // Импорт библиотеки classnames для удобного управления классами CSS
 
 export const Navigation = () => {
-  const [isToggleOn, setIsToggleOn] = useState(false); // Состояние для управления состоянием меню (открыто/закрыто)
+  const [setIsToggleOn] = useState(false); // Состояние для управления состоянием меню (открыто/закрыто)
 
-  const onSwitchToggle = () => {
-    setIsToggleOn((prev) => !prev); // Функция для переключения состояния меню
-  };
+  
 
   const getClassName = ({ isActive }) => isActive ? styles.active : ''; // Функция для получения класса стиля styles.active в зависимости от isActive
 
